@@ -1,22 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>Collections</title>
-    <url>/2020/11/02/Collections/</url>
-    <content><![CDATA[<h3 id="Collections"><a href="#Collections" class="headerlink" title="Collections"></a>Collections</h3><p>常用方法：</p>
-<p>​            reverse(list):    反转数组；</p>
-<p>​            shuffle(list):    对list集合随机排序</p>
-<a id="more"></a>
-
-<p>​            sort(list):    对集合排序</p>
-<p>​            frequency(Collection,object):    返回指定集合中指定元素的出现次数</p>
-<p>​            copy(List dest,List src):    将src中的内容复制到dest中；</p>
-]]></content>
-      <tags>
-        <tag>集合 javase</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>AJAX</title>
     <url>/2020/12/08/AJAX/</url>
     <content><![CDATA[<h1 id="AJAX"><a href="#AJAX" class="headerlink" title="AJAX"></a>AJAX</h1><p> Ajax 可以使网页实现异步更新。这意味着可以在不重新加载整个网页的情况下，对网页的某部分进行更新。 </p>
@@ -31,6 +15,22 @@
 ]]></content>
       <tags>
         <tag>javaweb</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Collections</title>
+    <url>/2020/11/02/Collections/</url>
+    <content><![CDATA[<h3 id="Collections"><a href="#Collections" class="headerlink" title="Collections"></a>Collections</h3><p>常用方法：</p>
+<p>​            reverse(list):    反转数组；</p>
+<p>​            shuffle(list):    对list集合随机排序</p>
+<a id="more"></a>
+
+<p>​            sort(list):    对集合排序</p>
+<p>​            frequency(Collection,object):    返回指定集合中指定元素的出现次数</p>
+<p>​            copy(List dest,List src):    将src中的内容复制到dest中；</p>
+]]></content>
+      <tags>
+        <tag>集合 javase</tag>
       </tags>
   </entry>
   <entry>
@@ -56,14 +56,6 @@
 ]]></content>
       <tags>
         <tag>javaweb</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Git</title>
-    <url>/2021/02/17/Git/</url>
-    <content><![CDATA[]]></content>
-      <tags>
-        <tag>Git</tag>
       </tags>
   </entry>
   <entry>
@@ -198,55 +190,6 @@
       </tags>
   </entry>
   <entry>
-    <title>JQurey</title>
-    <url>/2020/12/04/JQurey/</url>
-    <content><![CDATA[<h1 id="JQuery"><a href="#JQuery" class="headerlink" title="JQuery"></a>JQuery</h1><h2 id="js与jq对象转换"><a href="#js与jq对象转换" class="headerlink" title="js与jq对象转换"></a>js与jq对象转换</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">1.jq--&gt;js:jq对象[索引]，或者jq对象.get(索引)</span><br><span class="line"></span><br><span class="line">2.js--&gt;jq:$(js对象)</span><br></pre></td></tr></table></figure>
-
-<a id="more"></a>
-
-<h2 id="选择器"><a href="#选择器" class="headerlink" title="选择器"></a>选择器</h2><p>作用：筛选具有相似</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">JQuery入口函数：dom文档加载完成后执行函数中的代码------&#x3D;window.onload</span><br><span class="line">	$(function()&#123;</span><br><span class="line">	</span><br><span class="line">	&#125;);</span><br><span class="line">	window.onload定义多次，后面的会把前面的覆盖掉</span><br><span class="line">	$(function()可以定义多次</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
-<h3 id="基本选择器"><a href="#基本选择器" class="headerlink" title="基本选择器"></a>基本选择器</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">1.标签选择器：$(&quot;html标签名&quot;)</span><br><span class="line">2.id选择器:$(&quot;#id的属性值&quot;)</span><br><span class="line">3.类选择器：$(&quot;.class的属性值&quot;)</span><br><span class="line">4.并集选择器：$(&quot;选择器1，选择器2...&quot;)</span><br></pre></td></tr></table></figure>
-
-<h3 id="层级选择器"><a href="#层级选择器" class="headerlink" title="层级选择器"></a>层级选择器</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">后代选择器：$(&quot;A B&quot;)</span><br><span class="line">子代选择器：$(&quot;A &gt; B&quot;)</span><br></pre></td></tr></table></figure>
-
-<h3 id="属性选择器"><a href="#属性选择器" class="headerlink" title="属性选择器"></a>属性选择器</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">属性名称选择器：</span><br><span class="line">	$(&quot;A[属性名]&quot;)</span><br><span class="line">属性选择器：	</span><br><span class="line">	$(&quot;A[属性名&#x3D;&#39;值&#39;]&quot;)</span><br><span class="line">复合属性选择器：</span><br><span class="line">	$(&quot;A[属性名&#x3D;&#39;值&#39;][]...&quot;)</span><br><span class="line">属性以__开始：</span><br><span class="line">	$(&quot;A[title^&#x3D;&quot;te&quot;]&quot;)</span><br><span class="line">属性以__结束：</span><br><span class="line">	$(&quot;A[title$&#x3D;&quot;te&quot;]&quot;)</span><br><span class="line">属性包含__：</span><br><span class="line">	$(&quot;A[title*&#x3D;&quot;te&quot;]&quot;)</span><br></pre></td></tr></table></figure>
-
-<h3 id="过滤选择器"><a href="#过滤选择器" class="headerlink" title="过滤选择器"></a>过滤选择器</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">首元素选择器：</span><br><span class="line">	元素:first</span><br><span class="line">尾元素选择器：</span><br><span class="line">	元素：last</span><br><span class="line">非元素选择器：</span><br><span class="line">	元素：not(selector)</span><br><span class="line">偶数选择器：</span><br><span class="line">	:even 偶数</span><br><span class="line">奇数选择器：</span><br><span class="line">	:odd 奇数</span><br><span class="line">等于索引选择器：</span><br><span class="line">	:eq(index)	</span><br><span class="line">大于索引选择器：</span><br><span class="line">	:gt(index)</span><br><span class="line">小于索引选择器：</span><br><span class="line">	:lt(index)    </span><br><span class="line">标题选择器：</span><br><span class="line">	：header</span><br></pre></td></tr></table></figure>
-
-<h3 id="表单选择器"><a href="#表单选择器" class="headerlink" title="表单选择器"></a>表单选择器</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">1.可用元素选择器：</span><br><span class="line">	：enabled</span><br><span class="line">2.不可用元素选择器：</span><br><span class="line">	：disable</span><br><span class="line">3.选中选择器：</span><br><span class="line">	：checked</span><br><span class="line">4.下拉列表选中选择器：</span><br><span class="line">	：selected</span><br></pre></td></tr></table></figure>
-
-<h2 id="DOM操作"><a href="#DOM操作" class="headerlink" title="DOM操作"></a>DOM操作</h2><h3 id="内容操作"><a href="#内容操作" class="headerlink" title="内容操作"></a>内容操作</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">html():获取或设置元素的标签体内容  &lt;a&gt;&lt;font&gt;内容&lt;font&#x2F;&gt;&lt;a&#x2F;&gt;  -----&lt;font&gt;内容&lt;font&#x2F;&gt;</span><br><span class="line">text()::获取或设置元素的标签体纯文本内容  &lt;a&gt;&lt;font&gt;内容&lt;font&#x2F;&gt;&lt;a&#x2F;&gt;----内容</span><br><span class="line">val():获取或设置元素的value属性值</span><br></pre></td></tr></table></figure>
-
-<h3 id="属性操作"><a href="#属性操作" class="headerlink" title="属性操作"></a>属性操作</h3><h4 id="通用属性操作"><a href="#通用属性操作" class="headerlink" title="通用属性操作"></a>通用属性操作</h4><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">attr():获取或设置属性值</span><br><span class="line">removeAttr():删除属性值</span><br><span class="line">prop():获取或设置属性值</span><br><span class="line">removeprop():删除属性值</span><br><span class="line">固有属性使用prop </span><br><span class="line">自定义属性使用attr</span><br></pre></td></tr></table></figure>
-
-<h4 id="对class属性操作"><a href="#对class属性操作" class="headerlink" title="对class属性操作"></a>对class属性操作</h4><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">addClass():添加class属性</span><br><span class="line">removeClass()：删除class属性</span><br><span class="line">toggleClass():切换class属性</span><br></pre></td></tr></table></figure>
-
-<h3 id="CRUD操作"><a href="#CRUD操作" class="headerlink" title="CRUD操作"></a>CRUD操作</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">append():</span><br><span class="line">	对象1.append(对象2):将对象2添加到对象1内部，并且在末尾</span><br><span class="line">prepend():</span><br><span class="line">	对象1.prepend(对象2):将对象2添加到对象1内部，并且在开头</span><br><span class="line">after():</span><br><span class="line">	对象1.after(对象2)：将对象2添加到对象1后面</span><br><span class="line">before():</span><br><span class="line">	对象1.beforer(对象2)：将对象2添加到对象1前面</span><br><span class="line">remove():</span><br><span class="line">	对象.remove():将对象删除</span><br><span class="line">empty():</span><br><span class="line">	对象.empty():清空所有后代元素</span><br></pre></td></tr></table></figure>
-
-<h2 id="高级"><a href="#高级" class="headerlink" title="高级"></a>高级</h2><h3 id="动画"><a href="#动画" class="headerlink" title="动画"></a>动画</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">1.默认显示和隐藏</span><br><span class="line">	1.show([speed,[easing],[fn]])</span><br><span class="line">		参数：</span><br><span class="line">			speed：动画速度，三个预定义值(&quot;slow&quot;,&quot;normal&quot;,&quot;fast&quot;),或者毫秒值如(1000)</span><br><span class="line">			easing:切换效果，默认为swing,可用linear</span><br><span class="line">				swing:动画效果，先慢后快再慢</span><br><span class="line">				linear:匀速</span><br><span class="line">	2.hide(speed,[easing],[fn])		</span><br><span class="line">	3.toggle(speed,[easing],[fn])</span><br><span class="line">2.滑动显示和隐藏方式</span><br><span class="line">	1.slideDown([speed,[easing],[fn]])</span><br><span class="line">	2.slideUp([speed,[easing],[fn]])</span><br><span class="line">	3.slideToggle([speed,[easing],[fn]])</span><br><span class="line">3.淡入淡出显示效果</span><br><span class="line">	1.fadeIn([speed,[easing],[fn]])</span><br><span class="line">	2.fadeOut([speed,[easing],[fn]])</span><br><span class="line">	3.fadeToggle([speed,[easing],[fn]])</span><br><span class="line">				</span><br></pre></td></tr></table></figure>
-
-<h3 id="遍历"><a href="#遍历" class="headerlink" title="遍历"></a>遍历</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">js遍历方式：</span><br><span class="line">	for(初始化值，循环结束条件，步长)</span><br><span class="line">jq遍历方式：</span><br><span class="line">	1.jq对象.each(callback)</span><br><span class="line">		return false,结束循环(break)</span><br><span class="line">		return true,结束本次循环(continue)</span><br><span class="line">	2.$.each(object,[callback])</span><br><span class="line">	3.for..of:	</span><br><span class="line">		for(li of citys)&#123;</span><br><span class="line">		</span><br><span class="line">		&#125;</span><br></pre></td></tr></table></figure>
-
-<h3 id="事件绑定"><a href="#事件绑定" class="headerlink" title="事件绑定"></a>事件绑定</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">1.标准方式</span><br><span class="line">	jq对象.事件方法(回调函数)</span><br><span class="line">2.on绑定事件&#x2F;off解绑</span><br><span class="line">	jq对象.on(&quot;事件名称&quot;，回调函数)</span><br><span class="line">3.事件切换</span><br><span class="line">	jq对象.toggle(fn1,fn2...)</span><br></pre></td></tr></table></figure>
-
-<h3 id="插件"><a href="#插件" class="headerlink" title="插件"></a>插件</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">1.$.fn.extend(object)</span><br><span class="line">	增强通过JQuery获取的对象的功能 $(&quot;#id&quot;)</span><br><span class="line">        $.fn.extend(&#123;</span><br><span class="line">            check:function()&#123;</span><br><span class="line">                alert(123);</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;);</span><br><span class="line">2.$.extend(object)</span><br><span class="line">	增强JQuery对象自身的功能</span><br><span class="line">	</span><br></pre></td></tr></table></figure>
-
-<h2 id="案例"><a href="#案例" class="headerlink" title="案例"></a>案例</h2><h3 id="隔行换色"><a href="#隔行换色" class="headerlink" title="隔行换色"></a>隔行换色</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line">&lt;script  src&#x3D;&quot;..&#x2F;..&#x2F;js&#x2F;jquery-3.3.1.min.js&quot;&gt;&lt;&#x2F;script&gt;</span><br><span class="line">&lt;script&gt;</span><br><span class="line">	&#x2F;&#x2F;需求：将数据行的奇数行背景色设置为 pink，偶数行背景色设置为 yellow</span><br><span class="line">	$(function () &#123;</span><br><span class="line">		$(&quot;tr:gt(1):odd&quot;).css(&quot;backgroundColor&quot;,&quot;pink&quot;);</span><br><span class="line">		$(&quot;tr:gt(1):even&quot;).css(&quot;backgroundColor&quot;,&quot;yellow&quot;);</span><br><span class="line">	&#125;);</span><br><span class="line">&lt;&#x2F;script&gt;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
-<h3 id="全选和全不选"><a href="#全选和全不选" class="headerlink" title="全选和全不选"></a>全选和全不选</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line">&lt;script  src&#x3D;&quot;..&#x2F;..&#x2F;js&#x2F;jquery-3.3.1.min.js&quot;&gt;</span><br><span class="line">&lt;&#x2F;script&gt;</span><br><span class="line">&lt;script&gt;</span><br><span class="line">	function selectAll(obj) &#123;</span><br><span class="line">		$(&quot;.itemSelect&quot;).prop(&quot;checked&quot;,obj.checked);</span><br><span class="line">	&#125;</span><br><span class="line">&lt;&#x2F;script&gt;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
-<h3 id="QQ表情"><a href="#QQ表情" class="headerlink" title="QQ表情"></a>QQ表情</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&#x2F;&#x2F;需求：点击qq表情，将其追加到发言框中</span><br><span class="line">&lt;script&gt;</span><br><span class="line">        &#x2F;&#x2F;需求：点击qq表情，将其追加到发言框中</span><br><span class="line">        $(function () &#123;</span><br><span class="line">            $(&quot;ul img&quot;).click(function () &#123;</span><br><span class="line">               $(&quot;.word&quot;).append($(this).clone());</span><br><span class="line">            &#125;);</span><br><span class="line">        &#125;);</span><br><span class="line">    &lt;&#x2F;script&gt;</span><br></pre></td></tr></table></figure>
-
-
-
-]]></content>
-      <tags>
-        <tag>Javaweb</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>IO流</title>
     <url>/2020/11/02/IO%E6%B5%81/</url>
     <content><![CDATA[<h2 id="File"><a href="#File" class="headerlink" title="File"></a>File</h2><p>创建File实例：</p>
@@ -301,6 +244,55 @@
 ]]></content>
       <tags>
         <tag>javaweb</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>JQurey</title>
+    <url>/2020/12/04/JQurey/</url>
+    <content><![CDATA[<h1 id="JQuery"><a href="#JQuery" class="headerlink" title="JQuery"></a>JQuery</h1><h2 id="js与jq对象转换"><a href="#js与jq对象转换" class="headerlink" title="js与jq对象转换"></a>js与jq对象转换</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">1.jq--&gt;js:jq对象[索引]，或者jq对象.get(索引)</span><br><span class="line"></span><br><span class="line">2.js--&gt;jq:$(js对象)</span><br></pre></td></tr></table></figure>
+
+<a id="more"></a>
+
+<h2 id="选择器"><a href="#选择器" class="headerlink" title="选择器"></a>选择器</h2><p>作用：筛选具有相似</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">JQuery入口函数：dom文档加载完成后执行函数中的代码------&#x3D;window.onload</span><br><span class="line">	$(function()&#123;</span><br><span class="line">	</span><br><span class="line">	&#125;);</span><br><span class="line">	window.onload定义多次，后面的会把前面的覆盖掉</span><br><span class="line">	$(function()可以定义多次</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h3 id="基本选择器"><a href="#基本选择器" class="headerlink" title="基本选择器"></a>基本选择器</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">1.标签选择器：$(&quot;html标签名&quot;)</span><br><span class="line">2.id选择器:$(&quot;#id的属性值&quot;)</span><br><span class="line">3.类选择器：$(&quot;.class的属性值&quot;)</span><br><span class="line">4.并集选择器：$(&quot;选择器1，选择器2...&quot;)</span><br></pre></td></tr></table></figure>
+
+<h3 id="层级选择器"><a href="#层级选择器" class="headerlink" title="层级选择器"></a>层级选择器</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">后代选择器：$(&quot;A B&quot;)</span><br><span class="line">子代选择器：$(&quot;A &gt; B&quot;)</span><br></pre></td></tr></table></figure>
+
+<h3 id="属性选择器"><a href="#属性选择器" class="headerlink" title="属性选择器"></a>属性选择器</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">属性名称选择器：</span><br><span class="line">	$(&quot;A[属性名]&quot;)</span><br><span class="line">属性选择器：	</span><br><span class="line">	$(&quot;A[属性名&#x3D;&#39;值&#39;]&quot;)</span><br><span class="line">复合属性选择器：</span><br><span class="line">	$(&quot;A[属性名&#x3D;&#39;值&#39;][]...&quot;)</span><br><span class="line">属性以__开始：</span><br><span class="line">	$(&quot;A[title^&#x3D;&quot;te&quot;]&quot;)</span><br><span class="line">属性以__结束：</span><br><span class="line">	$(&quot;A[title$&#x3D;&quot;te&quot;]&quot;)</span><br><span class="line">属性包含__：</span><br><span class="line">	$(&quot;A[title*&#x3D;&quot;te&quot;]&quot;)</span><br></pre></td></tr></table></figure>
+
+<h3 id="过滤选择器"><a href="#过滤选择器" class="headerlink" title="过滤选择器"></a>过滤选择器</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">首元素选择器：</span><br><span class="line">	元素:first</span><br><span class="line">尾元素选择器：</span><br><span class="line">	元素：last</span><br><span class="line">非元素选择器：</span><br><span class="line">	元素：not(selector)</span><br><span class="line">偶数选择器：</span><br><span class="line">	:even 偶数</span><br><span class="line">奇数选择器：</span><br><span class="line">	:odd 奇数</span><br><span class="line">等于索引选择器：</span><br><span class="line">	:eq(index)	</span><br><span class="line">大于索引选择器：</span><br><span class="line">	:gt(index)</span><br><span class="line">小于索引选择器：</span><br><span class="line">	:lt(index)    </span><br><span class="line">标题选择器：</span><br><span class="line">	：header</span><br></pre></td></tr></table></figure>
+
+<h3 id="表单选择器"><a href="#表单选择器" class="headerlink" title="表单选择器"></a>表单选择器</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">1.可用元素选择器：</span><br><span class="line">	：enabled</span><br><span class="line">2.不可用元素选择器：</span><br><span class="line">	：disable</span><br><span class="line">3.选中选择器：</span><br><span class="line">	：checked</span><br><span class="line">4.下拉列表选中选择器：</span><br><span class="line">	：selected</span><br></pre></td></tr></table></figure>
+
+<h2 id="DOM操作"><a href="#DOM操作" class="headerlink" title="DOM操作"></a>DOM操作</h2><h3 id="内容操作"><a href="#内容操作" class="headerlink" title="内容操作"></a>内容操作</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">html():获取或设置元素的标签体内容  &lt;a&gt;&lt;font&gt;内容&lt;font&#x2F;&gt;&lt;a&#x2F;&gt;  -----&lt;font&gt;内容&lt;font&#x2F;&gt;</span><br><span class="line">text()::获取或设置元素的标签体纯文本内容  &lt;a&gt;&lt;font&gt;内容&lt;font&#x2F;&gt;&lt;a&#x2F;&gt;----内容</span><br><span class="line">val():获取或设置元素的value属性值</span><br></pre></td></tr></table></figure>
+
+<h3 id="属性操作"><a href="#属性操作" class="headerlink" title="属性操作"></a>属性操作</h3><h4 id="通用属性操作"><a href="#通用属性操作" class="headerlink" title="通用属性操作"></a>通用属性操作</h4><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">attr():获取或设置属性值</span><br><span class="line">removeAttr():删除属性值</span><br><span class="line">prop():获取或设置属性值</span><br><span class="line">removeprop():删除属性值</span><br><span class="line">固有属性使用prop </span><br><span class="line">自定义属性使用attr</span><br></pre></td></tr></table></figure>
+
+<h4 id="对class属性操作"><a href="#对class属性操作" class="headerlink" title="对class属性操作"></a>对class属性操作</h4><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">addClass():添加class属性</span><br><span class="line">removeClass()：删除class属性</span><br><span class="line">toggleClass():切换class属性</span><br></pre></td></tr></table></figure>
+
+<h3 id="CRUD操作"><a href="#CRUD操作" class="headerlink" title="CRUD操作"></a>CRUD操作</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">append():</span><br><span class="line">	对象1.append(对象2):将对象2添加到对象1内部，并且在末尾</span><br><span class="line">prepend():</span><br><span class="line">	对象1.prepend(对象2):将对象2添加到对象1内部，并且在开头</span><br><span class="line">after():</span><br><span class="line">	对象1.after(对象2)：将对象2添加到对象1后面</span><br><span class="line">before():</span><br><span class="line">	对象1.beforer(对象2)：将对象2添加到对象1前面</span><br><span class="line">remove():</span><br><span class="line">	对象.remove():将对象删除</span><br><span class="line">empty():</span><br><span class="line">	对象.empty():清空所有后代元素</span><br></pre></td></tr></table></figure>
+
+<h2 id="高级"><a href="#高级" class="headerlink" title="高级"></a>高级</h2><h3 id="动画"><a href="#动画" class="headerlink" title="动画"></a>动画</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">1.默认显示和隐藏</span><br><span class="line">	1.show([speed,[easing],[fn]])</span><br><span class="line">		参数：</span><br><span class="line">			speed：动画速度，三个预定义值(&quot;slow&quot;,&quot;normal&quot;,&quot;fast&quot;),或者毫秒值如(1000)</span><br><span class="line">			easing:切换效果，默认为swing,可用linear</span><br><span class="line">				swing:动画效果，先慢后快再慢</span><br><span class="line">				linear:匀速</span><br><span class="line">	2.hide(speed,[easing],[fn])		</span><br><span class="line">	3.toggle(speed,[easing],[fn])</span><br><span class="line">2.滑动显示和隐藏方式</span><br><span class="line">	1.slideDown([speed,[easing],[fn]])</span><br><span class="line">	2.slideUp([speed,[easing],[fn]])</span><br><span class="line">	3.slideToggle([speed,[easing],[fn]])</span><br><span class="line">3.淡入淡出显示效果</span><br><span class="line">	1.fadeIn([speed,[easing],[fn]])</span><br><span class="line">	2.fadeOut([speed,[easing],[fn]])</span><br><span class="line">	3.fadeToggle([speed,[easing],[fn]])</span><br><span class="line">				</span><br></pre></td></tr></table></figure>
+
+<h3 id="遍历"><a href="#遍历" class="headerlink" title="遍历"></a>遍历</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">js遍历方式：</span><br><span class="line">	for(初始化值，循环结束条件，步长)</span><br><span class="line">jq遍历方式：</span><br><span class="line">	1.jq对象.each(callback)</span><br><span class="line">		return false,结束循环(break)</span><br><span class="line">		return true,结束本次循环(continue)</span><br><span class="line">	2.$.each(object,[callback])</span><br><span class="line">	3.for..of:	</span><br><span class="line">		for(li of citys)&#123;</span><br><span class="line">		</span><br><span class="line">		&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="事件绑定"><a href="#事件绑定" class="headerlink" title="事件绑定"></a>事件绑定</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">1.标准方式</span><br><span class="line">	jq对象.事件方法(回调函数)</span><br><span class="line">2.on绑定事件&#x2F;off解绑</span><br><span class="line">	jq对象.on(&quot;事件名称&quot;，回调函数)</span><br><span class="line">3.事件切换</span><br><span class="line">	jq对象.toggle(fn1,fn2...)</span><br></pre></td></tr></table></figure>
+
+<h3 id="插件"><a href="#插件" class="headerlink" title="插件"></a>插件</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">1.$.fn.extend(object)</span><br><span class="line">	增强通过JQuery获取的对象的功能 $(&quot;#id&quot;)</span><br><span class="line">        $.fn.extend(&#123;</span><br><span class="line">            check:function()&#123;</span><br><span class="line">                alert(123);</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;);</span><br><span class="line">2.$.extend(object)</span><br><span class="line">	增强JQuery对象自身的功能</span><br><span class="line">	</span><br></pre></td></tr></table></figure>
+
+<h2 id="案例"><a href="#案例" class="headerlink" title="案例"></a>案例</h2><h3 id="隔行换色"><a href="#隔行换色" class="headerlink" title="隔行换色"></a>隔行换色</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line">&lt;script  src&#x3D;&quot;..&#x2F;..&#x2F;js&#x2F;jquery-3.3.1.min.js&quot;&gt;&lt;&#x2F;script&gt;</span><br><span class="line">&lt;script&gt;</span><br><span class="line">	&#x2F;&#x2F;需求：将数据行的奇数行背景色设置为 pink，偶数行背景色设置为 yellow</span><br><span class="line">	$(function () &#123;</span><br><span class="line">		$(&quot;tr:gt(1):odd&quot;).css(&quot;backgroundColor&quot;,&quot;pink&quot;);</span><br><span class="line">		$(&quot;tr:gt(1):even&quot;).css(&quot;backgroundColor&quot;,&quot;yellow&quot;);</span><br><span class="line">	&#125;);</span><br><span class="line">&lt;&#x2F;script&gt;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h3 id="全选和全不选"><a href="#全选和全不选" class="headerlink" title="全选和全不选"></a>全选和全不选</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line">&lt;script  src&#x3D;&quot;..&#x2F;..&#x2F;js&#x2F;jquery-3.3.1.min.js&quot;&gt;</span><br><span class="line">&lt;&#x2F;script&gt;</span><br><span class="line">&lt;script&gt;</span><br><span class="line">	function selectAll(obj) &#123;</span><br><span class="line">		$(&quot;.itemSelect&quot;).prop(&quot;checked&quot;,obj.checked);</span><br><span class="line">	&#125;</span><br><span class="line">&lt;&#x2F;script&gt;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h3 id="QQ表情"><a href="#QQ表情" class="headerlink" title="QQ表情"></a>QQ表情</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&#x2F;&#x2F;需求：点击qq表情，将其追加到发言框中</span><br><span class="line">&lt;script&gt;</span><br><span class="line">        &#x2F;&#x2F;需求：点击qq表情，将其追加到发言框中</span><br><span class="line">        $(function () &#123;</span><br><span class="line">            $(&quot;ul img&quot;).click(function () &#123;</span><br><span class="line">               $(&quot;.word&quot;).append($(this).clone());</span><br><span class="line">            &#125;);</span><br><span class="line">        &#125;);</span><br><span class="line">    &lt;&#x2F;script&gt;</span><br></pre></td></tr></table></figure>
+
+
+
+]]></content>
+      <tags>
+        <tag>Javaweb</tag>
       </tags>
   </entry>
   <entry>
@@ -501,6 +493,34 @@
 ]]></content>
   </entry>
   <entry>
+    <title>Map</title>
+    <url>/2020/10/31/Map/</url>
+    <content><![CDATA[<h2 id="Map"><a href="#Map" class="headerlink" title="Map"></a>Map</h2><p>map中的key：无序的，不可重复的，使用set存储所有的key—-&gt;重写equals(),hashcode()</p>
+<p>map中的value：无序的，可重复的，使用collection存储value—–&gt;value所在的类重写equals()</p>
+<a id="more"></a>
+
+<p>map的entry：无序的，不可重复的，使用set存储所有的entry</p>
+<h3 id="HashMap"><a href="#HashMap" class="headerlink" title="HashMap"></a>HashMap</h3><figure class="highlight java"><table><tr><td class="code"><pre><span class="line">jdk7:</span><br><span class="line">HashMap hm=<span class="keyword">new</span> HashMap();</span><br><span class="line">		底层创建长度为<span class="number">16</span>的数组 Entry[] table</span><br><span class="line">        map.put(key,value):</span><br><span class="line">				首先调用key所在的hashcode（）方法计算哈希值，再经过寻址算法计算出在Entry所存放的位置</span><br><span class="line">                若此位置上没有元素，则直接放在此处，若此位置有元素，则先比较哈希值，</span><br><span class="line">                若哈希值不同，则添加成功，若哈希值相同则比较equals（）</span><br><span class="line">                若返回<span class="keyword">false</span>，则添加成功，若为<span class="keyword">true</span>，则覆盖原来的value    </span><br><span class="line">                    </span><br><span class="line">jdk8:     </span><br><span class="line">	 HashMap hm=<span class="keyword">new</span> HashMap();</span><br><span class="line">     在调用put（）方法是创建长度为<span class="number">16</span>的数组</span><br><span class="line">     底层数组是Node[]</span><br><span class="line">     数据个数&gt;<span class="number">8</span>且数组长度&gt;<span class="number">64</span>时，改为红黑树存储    </span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">jdk7：</span><br><span class="line">底层创建长度为16的数组 Entry[] table：</span><br><span class="line">		负载因子：0.75，初始长度：16，</span><br><span class="line">		临界值：负载因子*初始长度，</span><br><span class="line">		扩容：超出临界值且存放位置非空，扩容长度：*2</span><br><span class="line">map.put(key,value):</span><br><span class="line">		计算哈希值</span><br><span class="line">		再调用indexFor()：哈希值&amp;(table.length-1) 计算出所在数组位置</span><br><span class="line">		在for循环遍历分支</span><br><span class="line">			for(Entry&lt;k,v&gt; e&#x3D;table[i],e!&#x3D;null,e&#x3D;e.next)&#123;</span><br><span class="line">		   	 	if(e.hash&#x3D;&#x3D;hash&amp;&amp;((k&#x3D;e.key||key.equals(k))))</span><br><span class="line">			&#125;</span><br><span class="line">		添加：头插法</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">jdk8:</span><br><span class="line">	尾插法</span><br></pre></td></tr></table></figure>
+
+<h3 id="LinkedHashMap"><a href="#LinkedHashMap" class="headerlink" title="LinkedHashMap"></a>LinkedHashMap</h3><p>hashMap子类</p>
+<p>可以按添加顺序遍历</p>
+<p>Entry&lt;k,v&gt; extends HashMap.Node&lt;k,v&gt;{</p>
+<p> Entry&lt;k,v&gt; before,after;   —–&gt;记录前后元素</p>
+<p>}</p>
+<h3 id="TreeMap"><a href="#TreeMap" class="headerlink" title="TreeMap"></a>TreeMap</h3><p>向TreeMap添加key-value。要求key是同一类创建的对象</p>
+<h3 id="Properties"><a href="#Properties" class="headerlink" title="Properties"></a>Properties</h3><p>常用来处理配置文件，key-value都是字符串类型</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line">Properties pos=<span class="keyword">new</span> Properties();</span><br><span class="line">FileIntputStream fis=<span class="keyword">new</span> FileIntputStream(<span class="string">&quot;&quot;</span>);</span><br><span class="line">pos.load(fis);</span><br><span class="line">pos.getProperties(<span class="string">&quot;&quot;</span>);</span><br></pre></td></tr></table></figure>
+
+]]></content>
+      <tags>
+        <tag>集合 javase</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Mybatis</title>
     <url>/2021/01/04/Mybatis/</url>
     <content><![CDATA[<h1 id="Mybatis"><a href="#Mybatis" class="headerlink" title="Mybatis"></a>Mybatis</h1><h2 id="什么是MyBatis"><a href="#什么是MyBatis" class="headerlink" title="什么是MyBatis"></a>什么是MyBatis</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">MyBatis 是一款优秀的持久层框架</span><br><span class="line"></span><br><span class="line">MyBatis 避免了几乎所有的 JDBC 代码和手动设置参数以及获取结果集的过程</span><br><span class="line"></span><br><span class="line">MyBatis 可以使用简单的 XML 或注解来配置和映射原生信息，将接口和 Java 的 实体类 【Plain Old Java Objects,普通的 Java对象】映射成数据库中的记录。</span><br><span class="line"></span><br><span class="line">MyBatis 是一个半自动化的ORM框架 (Object Relationship Mapping) --&gt;对象关系映射</span><br></pre></td></tr></table></figure>
@@ -563,34 +583,6 @@
       </tags>
   </entry>
   <entry>
-    <title>Map</title>
-    <url>/2020/10/31/Map/</url>
-    <content><![CDATA[<h2 id="Map"><a href="#Map" class="headerlink" title="Map"></a>Map</h2><p>map中的key：无序的，不可重复的，使用set存储所有的key—-&gt;重写equals(),hashcode()</p>
-<p>map中的value：无序的，可重复的，使用collection存储value—–&gt;value所在的类重写equals()</p>
-<a id="more"></a>
-
-<p>map的entry：无序的，不可重复的，使用set存储所有的entry</p>
-<h3 id="HashMap"><a href="#HashMap" class="headerlink" title="HashMap"></a>HashMap</h3><figure class="highlight java"><table><tr><td class="code"><pre><span class="line">jdk7:</span><br><span class="line">HashMap hm=<span class="keyword">new</span> HashMap();</span><br><span class="line">		底层创建长度为<span class="number">16</span>的数组 Entry[] table</span><br><span class="line">        map.put(key,value):</span><br><span class="line">				首先调用key所在的hashcode（）方法计算哈希值，再经过寻址算法计算出在Entry所存放的位置</span><br><span class="line">                若此位置上没有元素，则直接放在此处，若此位置有元素，则先比较哈希值，</span><br><span class="line">                若哈希值不同，则添加成功，若哈希值相同则比较equals（）</span><br><span class="line">                若返回<span class="keyword">false</span>，则添加成功，若为<span class="keyword">true</span>，则覆盖原来的value    </span><br><span class="line">                    </span><br><span class="line">jdk8:     </span><br><span class="line">	 HashMap hm=<span class="keyword">new</span> HashMap();</span><br><span class="line">     在调用put（）方法是创建长度为<span class="number">16</span>的数组</span><br><span class="line">     底层数组是Node[]</span><br><span class="line">     数据个数&gt;<span class="number">8</span>且数组长度&gt;<span class="number">64</span>时，改为红黑树存储    </span><br></pre></td></tr></table></figure>
-
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">jdk7：</span><br><span class="line">底层创建长度为16的数组 Entry[] table：</span><br><span class="line">		负载因子：0.75，初始长度：16，</span><br><span class="line">		临界值：负载因子*初始长度，</span><br><span class="line">		扩容：超出临界值且存放位置非空，扩容长度：*2</span><br><span class="line">map.put(key,value):</span><br><span class="line">		计算哈希值</span><br><span class="line">		再调用indexFor()：哈希值&amp;(table.length-1) 计算出所在数组位置</span><br><span class="line">		在for循环遍历分支</span><br><span class="line">			for(Entry&lt;k,v&gt; e&#x3D;table[i],e!&#x3D;null,e&#x3D;e.next)&#123;</span><br><span class="line">		   	 	if(e.hash&#x3D;&#x3D;hash&amp;&amp;((k&#x3D;e.key||key.equals(k))))</span><br><span class="line">			&#125;</span><br><span class="line">		添加：头插法</span><br></pre></td></tr></table></figure>
-
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">jdk8:</span><br><span class="line">	尾插法</span><br></pre></td></tr></table></figure>
-
-<h3 id="LinkedHashMap"><a href="#LinkedHashMap" class="headerlink" title="LinkedHashMap"></a>LinkedHashMap</h3><p>hashMap子类</p>
-<p>可以按添加顺序遍历</p>
-<p>Entry&lt;k,v&gt; extends HashMap.Node&lt;k,v&gt;{</p>
-<p> Entry&lt;k,v&gt; before,after;   —–&gt;记录前后元素</p>
-<p>}</p>
-<h3 id="TreeMap"><a href="#TreeMap" class="headerlink" title="TreeMap"></a>TreeMap</h3><p>向TreeMap添加key-value。要求key是同一类创建的对象</p>
-<h3 id="Properties"><a href="#Properties" class="headerlink" title="Properties"></a>Properties</h3><p>常用来处理配置文件，key-value都是字符串类型</p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line">Properties pos=<span class="keyword">new</span> Properties();</span><br><span class="line">FileIntputStream fis=<span class="keyword">new</span> FileIntputStream(<span class="string">&quot;&quot;</span>);</span><br><span class="line">pos.load(fis);</span><br><span class="line">pos.getProperties(<span class="string">&quot;&quot;</span>);</span><br></pre></td></tr></table></figure>
-
-]]></content>
-      <tags>
-        <tag>集合 javase</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Mysql</title>
     <url>/2020/12/07/Mysql/</url>
     <content><![CDATA[<h1 id="Mysql"><a href="#Mysql" class="headerlink" title="Mysql"></a>Mysql</h1><h2 id="条件查询"><a href="#条件查询" class="headerlink" title="条件查询"></a>条件查询</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">语法：</span><br><span class="line">	select</span><br><span class="line">		分组函数，列(要求出现在group by 的后面)</span><br><span class="line">	from</span><br><span class="line">    	表名</span><br><span class="line">    where</span><br><span class="line">    	筛选条件；</span><br><span class="line">    group by 分组的列表	</span><br><span class="line">    order by 排序列表 【asc|desc】	</span><br><span class="line"></span><br><span class="line"> 执行顺序：from----&gt;where---&gt;group by having----&gt;聚合函数----&gt;select---&gt;order by</span><br></pre></td></tr></table></figure>
@@ -626,36 +618,6 @@
 ]]></content>
       <tags>
         <tag>数据库</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Mysql高级</title>
-    <url>/2021/02/21/Mysql%E9%AB%98%E7%BA%A7/</url>
-    <content><![CDATA[<h1 id="Mysql"><a href="#Mysql" class="headerlink" title="Mysql"></a>Mysql</h1><h2 id="存储引擎"><a href="#存储引擎" class="headerlink" title="存储引擎"></a>存储引擎</h2><p><img src="1613892915666.png" alt="1613892915666"></p>
-<a id="more"></a>
-
-<h2 id="索引"><a href="#索引" class="headerlink" title="索引"></a>索引</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">索引是帮助MYSQL高效获取数据的数据结构</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
-<h3 id="优缺点"><a href="#优缺点" class="headerlink" title="优缺点"></a>优缺点</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">优点：提高数据的检索效率</span><br><span class="line">	 降低数据排序成本</span><br><span class="line">缺点：占内存</span><br></pre></td></tr></table></figure>
-
-<h3 id="索引分类"><a href="#索引分类" class="headerlink" title="索引分类"></a>索引分类</h3><h4 id="单值索引"><a href="#单值索引" class="headerlink" title="单值索引"></a>单值索引</h4><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">一个索引只包含单个列，一个表可以有多个单列索引</span><br></pre></td></tr></table></figure>
-
-<h4 id="唯一索引"><a href="#唯一索引" class="headerlink" title="唯一索引"></a>唯一索引</h4><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">索引列必须唯一，可以为空</span><br></pre></td></tr></table></figure>
-
-<h4 id="复合索引"><a href="#复合索引" class="headerlink" title="复合索引"></a>复合索引</h4><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">一个索引有多个列</span><br></pre></td></tr></table></figure>
-
-<h3 id="基本语法"><a href="#基本语法" class="headerlink" title="基本语法"></a>基本语法</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">创建：create [unique] index indexName On  mytable(columnname(length))</span><br><span class="line">	 alter mytable add [unique] index [indexName] on (columnname(length))</span><br><span class="line"></span><br><span class="line">删除：drop index [indexName] on mytable</span><br><span class="line"></span><br><span class="line">查看：show index from table </span><br></pre></td></tr></table></figure>
-
-<h4 id="alter使用"><a href="#alter使用" class="headerlink" title="alter使用"></a>alter使用</h4><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">添加主键索引(唯一，不为null)</span><br><span class="line">alter table tab_name add primary key (column_list) </span><br><span class="line"></span><br><span class="line">添加唯一索引(除了null外，必须唯一)</span><br><span class="line">alter table tab_name add unique index_name(lolumn_list) </span><br><span class="line"></span><br><span class="line">添加普通索引(索引值可以为多次)</span><br><span class="line">alter table tab_name add index_name(lolumn_list) </span><br><span class="line"></span><br><span class="line">添加全文索引</span><br><span class="line">alter table tab_name add fulltext index_name(lolumn_list) </span><br></pre></td></tr></table></figure>
-
-
-
-
-
-<p>​            </p>
-]]></content>
-      <tags>
-        <tag>mysql</tag>
       </tags>
   </entry>
   <entry>
@@ -698,6 +660,36 @@
 ]]></content>
       <tags>
         <tag>javaweb</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Mysql高级</title>
+    <url>/2021/02/21/Mysql%E9%AB%98%E7%BA%A7/</url>
+    <content><![CDATA[<h1 id="Mysql"><a href="#Mysql" class="headerlink" title="Mysql"></a>Mysql</h1><h2 id="存储引擎"><a href="#存储引擎" class="headerlink" title="存储引擎"></a>存储引擎</h2><p><img src="1613892915666.png" alt="1613892915666"></p>
+<a id="more"></a>
+
+<h2 id="索引"><a href="#索引" class="headerlink" title="索引"></a>索引</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">索引是帮助MYSQL高效获取数据的数据结构</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h3 id="优缺点"><a href="#优缺点" class="headerlink" title="优缺点"></a>优缺点</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">优点：提高数据的检索效率</span><br><span class="line">	 降低数据排序成本</span><br><span class="line">缺点：占内存</span><br></pre></td></tr></table></figure>
+
+<h3 id="索引分类"><a href="#索引分类" class="headerlink" title="索引分类"></a>索引分类</h3><h4 id="单值索引"><a href="#单值索引" class="headerlink" title="单值索引"></a>单值索引</h4><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">一个索引只包含单个列，一个表可以有多个单列索引</span><br></pre></td></tr></table></figure>
+
+<h4 id="唯一索引"><a href="#唯一索引" class="headerlink" title="唯一索引"></a>唯一索引</h4><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">索引列必须唯一，可以为空</span><br></pre></td></tr></table></figure>
+
+<h4 id="复合索引"><a href="#复合索引" class="headerlink" title="复合索引"></a>复合索引</h4><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">一个索引有多个列</span><br></pre></td></tr></table></figure>
+
+<h3 id="基本语法"><a href="#基本语法" class="headerlink" title="基本语法"></a>基本语法</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">创建：create [unique] index indexName On  mytable(columnname(length))</span><br><span class="line">	 alter mytable add [unique] index [indexName] on (columnname(length))</span><br><span class="line"></span><br><span class="line">删除：drop index [indexName] on mytable</span><br><span class="line"></span><br><span class="line">查看：show index from table </span><br></pre></td></tr></table></figure>
+
+<h4 id="alter使用"><a href="#alter使用" class="headerlink" title="alter使用"></a>alter使用</h4><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">添加主键索引(唯一，不为null)</span><br><span class="line">alter table tab_name add primary key (column_list) </span><br><span class="line"></span><br><span class="line">添加唯一索引(除了null外，必须唯一)</span><br><span class="line">alter table tab_name add unique index_name(lolumn_list) </span><br><span class="line"></span><br><span class="line">添加普通索引(索引值可以为多次)</span><br><span class="line">alter table tab_name add index_name(lolumn_list) </span><br><span class="line"></span><br><span class="line">添加全文索引</span><br><span class="line">alter table tab_name add fulltext index_name(lolumn_list) </span><br></pre></td></tr></table></figure>
+
+
+
+
+
+<p>​            </p>
+]]></content>
+      <tags>
+        <tag>mysql</tag>
       </tags>
   </entry>
   <entry>
@@ -835,69 +827,6 @@
       </tags>
   </entry>
   <entry>
-    <title>hexo搭建博客</title>
-    <url>/2020/10/20/hexo%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/</url>
-    <content><![CDATA[<h2 id="安装所需工具"><a href="#安装所需工具" class="headerlink" title="安装所需工具"></a>安装所需工具</h2><ul>
-<li>Node  <a href="https://nodejs.org/en/">https://nodejs.org/en/</a></li>
-<li>Git      <a href="https://git-scm.com/">https://git-scm.com/</a></li>
-<li>hexo</li>
-</ul>
-<h2 id="检测安装"><a href="#检测安装" class="headerlink" title="检测安装"></a>检测安装</h2><ul>
-<li><p>检测node安装是否成功：</p>
-<p>node -v（返回版本号）</p>
-<p>npm -v（返回版本号）</p>
-<a id="more"></a>
-</li>
-<li><p>安装淘宝的镜像源（如果错误就重来，因为连接可能不稳定，不要害怕多试几次就可以了）</p>
-<p>npm install -g cnpm –registry=<a href="https://registry.npm.taobao.org/">https://registry.npm.taobao.org</a></p>
-<p>检测cnpm（返回cnpm的信息）</p>
-<p>cnpm -v（返回cnpm的版本信息）</p>
-</li>
-<li><p>安装hexo（如果失败重新来过就可以了）</p>
-<p>cnpm install -g hexo-cli</p>
-<p>检测hexo -v（返回hexo的版本信息）</p>
-</li>
-</ul>
-<h2 id="将网站部署到GitHub上"><a href="#将网站部署到GitHub上" class="headerlink" title="将网站部署到GitHub上"></a>将网站部署到GitHub上</h2><ul>
-<li><p>建立一个仓库（repository） 名为  自己的昵称+.github.io </p>
-</li>
-<li><p>在Blog目录下安装一个hexo部署插件cnpm install –save hexo-deployer-git</p>
-</li>
-<li><p>找到Blog文件中的   _config.yml  文件，使用编译器打开，找到</p>
-<p><img src="C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\1603196206594.png" alt="1603196206594"></p>
-</li>
-</ul>
-<p>type    写成git方便识别</p>
-<p>repo    repository仓库地址将刚刚新建的github仓库地址</p>
-<p>branch  分支这里设置管理员 master</p>
-<p>（冒号后面留一个空格） </p>
-<h2 id="hexo命令"><a href="#hexo命令" class="headerlink" title="hexo命令"></a>hexo命令</h2><ul>
-<li><p>开启hexo </p>
-<p>hexo s</p>
-</li>
-<li><p>清除</p>
-</li>
-</ul>
-<p>​     hexo clean</p>
-<ul>
-<li>生成文件</li>
-</ul>
-<p>​     hexo g</p>
-<ul>
-<li>部署文件</li>
-</ul>
-<p>​     hexo d</p>
-<ul>
-<li>更换主题</li>
-</ul>
-<p>git   clone  <a href="http://github.com/litten/hexo-theme-yilia.gitthemes/%EF%BC%88%E5%85%8B%E9%9A%86%E5%9C%B0%E5%9D%80%EF%BC%89/%EF%BC%88%E5%85%8B%E9%9A%86%E4%B9%8B%E5%90%8E%E7%9A%84%E6%9C%AC%E5%9C%B0%E4%BD%8D">http://github.com/litten/hexo-theme-yilia.gitthemes/（克隆地址）/（克隆之后的本地位</a></p>
-<p>置）</p>
-]]></content>
-      <tags>
-        <tag>hexo</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>css</title>
     <url>/2020/11/12/css/</url>
     <content><![CDATA[<h2 id="Css"><a href="#Css" class="headerlink" title="Css"></a>Css</h2><h4 id="与html结合方式"><a href="#与html结合方式" class="headerlink" title="与html结合方式"></a>与html结合方式</h4><p>1、内联式：</p>
@@ -974,6 +903,69 @@
 ]]></content>
       <tags>
         <tag>javaweb</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>hexo搭建博客</title>
+    <url>/2020/10/20/hexo%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/</url>
+    <content><![CDATA[<h2 id="安装所需工具"><a href="#安装所需工具" class="headerlink" title="安装所需工具"></a>安装所需工具</h2><ul>
+<li>Node  <a href="https://nodejs.org/en/">https://nodejs.org/en/</a></li>
+<li>Git      <a href="https://git-scm.com/">https://git-scm.com/</a></li>
+<li>hexo</li>
+</ul>
+<h2 id="检测安装"><a href="#检测安装" class="headerlink" title="检测安装"></a>检测安装</h2><ul>
+<li><p>检测node安装是否成功：</p>
+<p>node -v（返回版本号）</p>
+<p>npm -v（返回版本号）</p>
+<a id="more"></a>
+</li>
+<li><p>安装淘宝的镜像源（如果错误就重来，因为连接可能不稳定，不要害怕多试几次就可以了）</p>
+<p>npm install -g cnpm –registry=<a href="https://registry.npm.taobao.org/">https://registry.npm.taobao.org</a></p>
+<p>检测cnpm（返回cnpm的信息）</p>
+<p>cnpm -v（返回cnpm的版本信息）</p>
+</li>
+<li><p>安装hexo（如果失败重新来过就可以了）</p>
+<p>cnpm install -g hexo-cli</p>
+<p>检测hexo -v（返回hexo的版本信息）</p>
+</li>
+</ul>
+<h2 id="将网站部署到GitHub上"><a href="#将网站部署到GitHub上" class="headerlink" title="将网站部署到GitHub上"></a>将网站部署到GitHub上</h2><ul>
+<li><p>建立一个仓库（repository） 名为  自己的昵称+.github.io </p>
+</li>
+<li><p>在Blog目录下安装一个hexo部署插件cnpm install –save hexo-deployer-git</p>
+</li>
+<li><p>找到Blog文件中的   _config.yml  文件，使用编译器打开，找到</p>
+<p><img src="C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\1603196206594.png" alt="1603196206594"></p>
+</li>
+</ul>
+<p>type    写成git方便识别</p>
+<p>repo    repository仓库地址将刚刚新建的github仓库地址</p>
+<p>branch  分支这里设置管理员 master</p>
+<p>（冒号后面留一个空格） </p>
+<h2 id="hexo命令"><a href="#hexo命令" class="headerlink" title="hexo命令"></a>hexo命令</h2><ul>
+<li><p>开启hexo </p>
+<p>hexo s</p>
+</li>
+<li><p>清除</p>
+</li>
+</ul>
+<p>​     hexo clean</p>
+<ul>
+<li>生成文件</li>
+</ul>
+<p>​     hexo g</p>
+<ul>
+<li>部署文件</li>
+</ul>
+<p>​     hexo d</p>
+<ul>
+<li>更换主题</li>
+</ul>
+<p>git   clone  <a href="http://github.com/litten/hexo-theme-yilia.gitthemes/%EF%BC%88%E5%85%8B%E9%9A%86%E5%9C%B0%E5%9D%80%EF%BC%89/%EF%BC%88%E5%85%8B%E9%9A%86%E4%B9%8B%E5%90%8E%E7%9A%84%E6%9C%AC%E5%9C%B0%E4%BD%8D">http://github.com/litten/hexo-theme-yilia.gitthemes/（克隆地址）/（克隆之后的本地位</a></p>
+<p>置）</p>
+]]></content>
+      <tags>
+        <tag>hexo</tag>
       </tags>
   </entry>
   <entry>
@@ -1097,6 +1089,24 @@ HttpServlet  -- 抽象类</code></pre>
       </tags>
   </entry>
   <entry>
+    <title>单例模式</title>
+    <url>/2020/10/29/%E5%8D%95%E4%BE%8B%E6%A8%A1%E5%BC%8F/</url>
+    <content><![CDATA[<h1 id="单例模式"><a href="#单例模式" class="headerlink" title="单例模式"></a>单例模式</h1><h3 id="饿汉式"><a href="#饿汉式" class="headerlink" title="饿汉式"></a>饿汉式</h3><a id="more"></a>
+
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Ehan</span></span>&#123;</span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">static</span> Ehan instance=<span class="keyword">new</span> Ehan();</span><br><span class="line">    <span class="function"><span class="keyword">private</span> <span class="title">Ehan</span><span class="params">()</span></span>&#123;&#125;;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> Ehan <span class="title">getInstance</span><span class="params">()</span></span>&#123;</span><br><span class="line">        <span class="keyword">return</span> instance;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="懒汉式"><a href="#懒汉式" class="headerlink" title="懒汉式"></a>懒汉式</h3><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Lhan</span></span>&#123;</span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">static</span> Lhan instance;</span><br><span class="line">    <span class="function"><span class="keyword">private</span> <span class="title">Lhan</span><span class="params">()</span></span>&#123;&#125;;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> Lhan <span class="title">getInstance</span><span class="params">()</span></span>&#123;</span><br><span class="line">        <span class="keyword">if</span>(instance==<span class="keyword">null</span>)&#123;</span><br><span class="line">            instance=<span class="keyword">new</span> Lhan();</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> instance;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="双重检查锁"><a href="#双重检查锁" class="headerlink" title="双重检查锁"></a>双重检查锁</h3><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">DBC</span></span>&#123;</span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">static</span> DBC instance;</span><br><span class="line">    <span class="function"><span class="keyword">private</span> <span class="title">DBC</span><span class="params">()</span></span>&#123;&#125;;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> DBC <span class="title">getInstance</span><span class="params">()</span></span>&#123;</span><br><span class="line">        <span class="keyword">if</span>(instance==<span class="keyword">null</span>)&#123;</span><br><span class="line">            <span class="keyword">synchronized</span>(DBC.class)&#123;</span><br><span class="line">                <span class="keyword">if</span>(instance==<span class="keyword">null</span>)&#123;</span><br><span class="line">                    instance=<span class="keyword">new</span> DBC();</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> instance;</span><br><span class="line">    &#125; </span><br><span class="line">&#125; </span><br><span class="line"></span><br><span class="line"><span class="comment">//会指令重排</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">DBC</span></span>&#123;</span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">volatile</span> <span class="keyword">static</span> DBC instance;</span><br><span class="line">    <span class="function"><span class="keyword">private</span> <span class="title">DBC</span><span class="params">()</span></span>&#123;&#125;;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> DBC <span class="title">getInstance</span><span class="params">()</span></span>&#123;</span><br><span class="line">        <span class="keyword">if</span>(instance==<span class="keyword">null</span>)&#123;</span><br><span class="line">            <span class="keyword">synchronized</span>(DBC.class)&#123;</span><br><span class="line">                <span class="keyword">if</span>(instance==<span class="keyword">null</span>)&#123;</span><br><span class="line">                    instance=<span class="keyword">new</span> DBC();</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> instance;</span><br><span class="line">    &#125; </span><br><span class="line">&#125; </span><br></pre></td></tr></table></figure>
+
+]]></content>
+      <tags>
+        <tag>设计模式</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>会话技术</title>
     <url>/2020/11/29/%E4%BC%9A%E8%AF%9D%E6%8A%80%E6%9C%AF/</url>
     <content><![CDATA[<h1 id="会话技术"><a href="#会话技术" class="headerlink" title="会话技术"></a>会话技术</h1><p>功能：在一次会话范围内的多次请求间，共享数据</p>
@@ -1185,24 +1195,6 @@ HttpServlet  -- 抽象类</code></pre>
       </tags>
   </entry>
   <entry>
-    <title>单例模式</title>
-    <url>/2020/10/29/%E5%8D%95%E4%BE%8B%E6%A8%A1%E5%BC%8F/</url>
-    <content><![CDATA[<h1 id="单例模式"><a href="#单例模式" class="headerlink" title="单例模式"></a>单例模式</h1><h3 id="饿汉式"><a href="#饿汉式" class="headerlink" title="饿汉式"></a>饿汉式</h3><a id="more"></a>
-
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Ehan</span></span>&#123;</span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">static</span> Ehan instance=<span class="keyword">new</span> Ehan();</span><br><span class="line">    <span class="function"><span class="keyword">private</span> <span class="title">Ehan</span><span class="params">()</span></span>&#123;&#125;;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> Ehan <span class="title">getInstance</span><span class="params">()</span></span>&#123;</span><br><span class="line">        <span class="keyword">return</span> instance;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h3 id="懒汉式"><a href="#懒汉式" class="headerlink" title="懒汉式"></a>懒汉式</h3><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Lhan</span></span>&#123;</span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">static</span> Lhan instance;</span><br><span class="line">    <span class="function"><span class="keyword">private</span> <span class="title">Lhan</span><span class="params">()</span></span>&#123;&#125;;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> Lhan <span class="title">getInstance</span><span class="params">()</span></span>&#123;</span><br><span class="line">        <span class="keyword">if</span>(instance==<span class="keyword">null</span>)&#123;</span><br><span class="line">            instance=<span class="keyword">new</span> Lhan();</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> instance;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h3 id="双重检查锁"><a href="#双重检查锁" class="headerlink" title="双重检查锁"></a>双重检查锁</h3><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">DBC</span></span>&#123;</span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">static</span> DBC instance;</span><br><span class="line">    <span class="function"><span class="keyword">private</span> <span class="title">DBC</span><span class="params">()</span></span>&#123;&#125;;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> DBC <span class="title">getInstance</span><span class="params">()</span></span>&#123;</span><br><span class="line">        <span class="keyword">if</span>(instance==<span class="keyword">null</span>)&#123;</span><br><span class="line">            <span class="keyword">synchronized</span>(DBC.class)&#123;</span><br><span class="line">                <span class="keyword">if</span>(instance==<span class="keyword">null</span>)&#123;</span><br><span class="line">                    instance=<span class="keyword">new</span> DBC();</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> instance;</span><br><span class="line">    &#125; </span><br><span class="line">&#125; </span><br><span class="line"></span><br><span class="line"><span class="comment">//会指令重排</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">DBC</span></span>&#123;</span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">volatile</span> <span class="keyword">static</span> DBC instance;</span><br><span class="line">    <span class="function"><span class="keyword">private</span> <span class="title">DBC</span><span class="params">()</span></span>&#123;&#125;;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> DBC <span class="title">getInstance</span><span class="params">()</span></span>&#123;</span><br><span class="line">        <span class="keyword">if</span>(instance==<span class="keyword">null</span>)&#123;</span><br><span class="line">            <span class="keyword">synchronized</span>(DBC.class)&#123;</span><br><span class="line">                <span class="keyword">if</span>(instance==<span class="keyword">null</span>)&#123;</span><br><span class="line">                    instance=<span class="keyword">new</span> DBC();</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> instance;</span><br><span class="line">    &#125; </span><br><span class="line">&#125; </span><br></pre></td></tr></table></figure>
-
-]]></content>
-      <tags>
-        <tag>设计模式</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>字符集</title>
     <url>/2020/11/03/%E5%AD%97%E7%AC%A6%E9%9B%86/</url>
     <content><![CDATA[<h5 id="ASCII"><a href="#ASCII" class="headerlink" title="ASCII"></a>ASCII</h5><p>美国标准信息交换码</p>
@@ -1242,6 +1234,14 @@ HttpServlet  -- 抽象类</code></pre>
       </tags>
   </entry>
   <entry>
+    <title>我的第一篇博客</title>
+    <url>/2020/10/20/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/</url>
+    <content><![CDATA[<h2 id="这是我用hexo写的第一篇博客"><a href="#这是我用hexo写的第一篇博客" class="headerlink" title="这是我用hexo写的第一篇博客"></a>这是我用hexo写的第一篇博客</h2>]]></content>
+      <tags>
+        <tag>hexo</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>接口</title>
     <url>/2020/10/26/%E6%8E%A5%E5%8F%A3/</url>
     <content><![CDATA[<h1 id="接口"><a href="#接口" class="headerlink" title="接口"></a>接口</h1><p>如果实现类覆盖了接口中所有的抽象方法，则此实现类可以实例化</p>
@@ -1261,14 +1261,6 @@ HttpServlet  -- 抽象类</code></pre>
 ]]></content>
       <tags>
         <tag>javase</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>我的第一篇博客</title>
-    <url>/2020/10/20/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/</url>
-    <content><![CDATA[<h2 id="这是我用hexo写的第一篇博客"><a href="#这是我用hexo写的第一篇博客" class="headerlink" title="这是我用hexo写的第一篇博客"></a>这是我用hexo写的第一篇博客</h2>]]></content>
-      <tags>
-        <tag>hexo</tag>
       </tags>
   </entry>
   <entry>
